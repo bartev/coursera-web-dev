@@ -1,6 +1,10 @@
 # coursera-web-dev
 
-Using browser-sync
+## Links
+
+[GH-pages for this repo](https://bartev.github.io/coursera-web-dev/)
+
+## Using browser-sync ##
 
 https://browsersync.io/docs/command-line
 
