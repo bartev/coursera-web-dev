@@ -1,0 +1,19 @@
+#+title: readme-wk2-css
+#+author: Bartev
+#+date: 2024-03-24
+
+* Links
+
+* zen garden
+
+[[https://csszengarden.com][zen garden]]
+
+* Lecture 17: Conflict resolution
+
+
+To set image size, must =(setq org-image-actual-width nil)=
+or define a default value with =(setq org-image-actual-width (list 400))=
+https://stackoverflow.com/questions/11670654/how-to-resize-images-in-org-mode
+
+#+CAPTION: Specifity from lecture
+[[file:images/specificity.png]]

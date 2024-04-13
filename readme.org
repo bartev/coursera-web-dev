@@ -1,0 +1,91 @@
+#+title: coursera-web-dev
+#+author: Bartev
+#+date: 2024-03-23
+
+* Useful sites
+
+** jsfiddle
+
+[[https://jsfiddle.net][jsfiddle.net]]
+
+Type html/css/js and see output.
+
+Also gives you a sharable link.
+
+** codepen.io
+
+[[https://codepen.io]]
+
+Look at features pens (sets of solutions)
+
+Sign up to get saveable links
+
+** css-tricks.com
+
+[[css-tricks.com]]
+
+* Using =browser-sync=
+
+[[https://browsersync.io/docs/command-line]]
+
+#+begin_src shell :results verbatim
+  browser-sync start --server --watch --directory docs --files "*"
+#+end_src
+
+Or, to use the configs,
+
+#+begin_src shell :results verbatim
+  browser-sync start -w -c bs-config.jse
+#+end_src
+
+I also have it set up with =babashka=
+
+#+begin_src shell :results verbatim
+  bb bsync
+#+end_src
+
+* Validating, what can I use where?
+
+** Markup validation source
+
+[[https://validator.w3.org]]
+
+Validate by URI, file upload or direct input.
+
+** w3schools
+
+[[https://www.w3schools.com/browsers/]]
+
+Check statistics on browsers
+
+** caniuse.com
+
+[[caniuse.com]]
+
+What can I use on based on browser, standards.
+
+* Lecture 5 HTML Content models
+
+** Block-level elements
+
+*** render to begin on
+
+** Inline elements
+
+*** Render on the same line by default
+
+** Character
+
+[[https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references][named-character-references]]
+
+
+* Lecture 9: Creating Links
+
+Links are specified by an =a= element with an =href=.
+=href= = hypertext reference.
+
+Example
+#+begin_example html
+  <a href="http://www.facebook.com/CourseraWebDev"
+        target="_blank" title="Like Our Page!">
+#+end_example

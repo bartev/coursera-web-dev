@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", Tahoma, Verdana, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: darkslategray;
+    border: 1px drakslategray;
+    font-size: 175%;
+}
+
+
+/********** Base styles **********/
+
+div.container-box {
+    float: left;
+    background-color: lightgrey;
+    border: 1px solid black;
+    height: auto; /* Adjust height dynamically */
+    margin: 10px; /* all margins */
+    padding: 50px 20px 20px 20px; /* Padding inside the box top/right/bottom/left */
+    position: relative;
+    /* height: 200px; */ /* Allow height to be flexible - may result in uneven box heights */
+}
+
+.label-box {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    border: 1px solid darkslategray;
+    margin: -1px -1px 0px 0px;
+    position: absolute; /* Position the label-box relative to the container-box */
+    right: 0px; /* Distance from right edge of container-box */
+    top: 0px; /* Distance from top edge of container-box */
+    width: 125px;
+    height: 40px;
+    font-size: 125%; /* 25% larger than standard paragraph font size */
+    font-weight: bold; /* Make the font bold */
+}
+
+.container-box p {
+    margin: 0px;
+}
+
+#chicken {
+    background-color: lightcoral;
+}
+
+#beef {
+    background-color: darkred;
+    color: navajowhite;
+}
+
+#sushi {
+    background-color: cornsilk;
+}
+
+/* /\* Use media queries from lecture 23 *\/ */
+/* /\* Use percentages for width *\/ */
+/* /\* Use float property (lecture 24) *\/ */
+
+/* /\* large: 992px+ */
+/*    3 sections, 1 row */
+/* *\/ */
+/* /\* medium: 768-991px */
+/*    1st 2 sections in 1st row, equal size. */
+/*    3rd section in 2nd row, entire width. */
+/* *\/ */
+/* /\* small: 767px- */
+/*    Each section on separate line. */
+/*    Takes up entire row. */
+/* *\/ */
+
+/* /\* Titles: */
+/*    Use relative and absolute positioning and offsets. */
+/*    Lecture 22 */
+/* *\/ */
+
+/* Simple responsive framework */
+.row {
+    width: 100%;
+}
+
+/* Subtracting 20px from the width to cover the container-box margin */
+
+/* Large devices */
+@media (min-width: 992px) {
+    .col-lg-4 {
+        width: calc(33.33% - 20px);
+    }
+}
+
+/* Medium */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        width: calc(50% - 20px);
+    }
+    .col-md-12 {
+        width: calc(100% - 20px);
+    }
+}
+
+/* Small */
+@media (max-width: 767px) {
+    .col-sm-12 {
+        width: calc(100% - 20px);
+    }
+}
