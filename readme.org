@@ -89,3 +89,9 @@ Example
   <a href="http://www.facebook.com/CourseraWebDev"
         target="_blank" title="Like Our Page!">
 #+end_example
+
+* Lecture 29:
+
+** Getting fonts
+
+[[https://fonts.google.com/]]
